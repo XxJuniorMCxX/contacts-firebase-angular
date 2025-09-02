@@ -11,3 +11,4 @@ export class ContactService {
 
 }
 //nos permite inyectar el servicio en otros componentes de nuestra aplicación
+// es un singleton que quiere decir que solo existe una instancia de este servicio en toda la aplicación
