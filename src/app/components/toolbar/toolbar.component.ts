@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -30,7 +30,10 @@ const MaterialModules = [MatIconModule, MatButtonModule, MatToolbarModule];
   styles: ``,
 })
 export class ToolbarComponent {
-  emitClick() {
-    console.log('click');
+  
+  onNewContactEvent=output<void>(); 
+
+  emitClick() :void{
+    this.onNewContactEvent.emit();
   }
 }

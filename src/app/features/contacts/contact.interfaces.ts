@@ -7,7 +7,7 @@ export interface Contact {
   id: number,
   name: string,
   email: string,
-  phone: string,
+  phone: number,
   country: string,
   actions:string,
   created: Timestamp,
