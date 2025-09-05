@@ -1,14 +1,26 @@
 <div mat-dialog-title>
-    <h1>Contacts</h1>
+  <h1>{{ getTitle() }}</h1>
 </div>
 
 <form action="">
-    <div mat-dialog-content class="content">
-        <div class="row">
-            <mat-form-field>
-                <mat-label>Name</mat-label>
-                <input matInput placeholder="First Name" type ="text" formControlName="name"/>
-            </mat-form-field>
-        </div>
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" formControlName="name" />
+      </mat-form-field>
     </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Telefono</mat-label>
+        <input matInput type="text" formControlName="phone">
+      </mat-form-field>
+    </div>
+  </div>
 </form>
